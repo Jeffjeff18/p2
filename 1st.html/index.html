@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Shop</title>
+    <style>
+        
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color:red;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav li {
+            margin: 0 20px;
+            color: white;
+        }
+
+        .content {
+            background-color:smoke whitesmoke;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        footer {
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Order Tickets</h2>
+        <form action="1st.php" method="post">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="cinema">Cinema to Watch:</label>
+            <select id="cinema" name="cinema">
+                <option value="Cinema 1">Cinema 1</option>
+                <option value="Cinema 2">Cinema 2</option>
+                <option value="Cinema 3">Cinema 3</option>
+                <option value="Cinema 4" selected>Cinema 4</option>
+                <option value="Cinema 5">Cinema 5</option>
+            </select><br><br>
+
+            <label for="numTickets">Number of Tickets:</label>
+            <input type="number" id="numTickets" name="numTickets" min="1" max="10" required><br><br>
+
+            <label>Add Ons:</label>
+            <input type="checkbox" id="popcorn" name="addOns[]" value="Popcorn"> Popcorn
+            <input type="checkbox" id="drink" name="addOns[]" value="Drink"> Drink
+            <input type="checkbox" id="burger" name="addOns[]" value="Burger"> Burger<br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dglBgJSMr-E?si=_r_Tx7yb7HTBzzH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/srK7uMzwbYo?si=f4XIxJs6Bp52Xo7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <p>&copy; JEFF JEFF SAKALAM</p>
+    </footer>
+    <audio controls autoplay loop>
+        
+        <video style="background-color: black;" width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        
+    </audio>
+</body>
+</html>
